@@ -4,7 +4,10 @@ import './App.css'
 // import Five from './Components/Five.jsx'
 // import Six from './Components/Six.jsx'
 // import Seven from './Components/Seven.jsx'
-import Eight from './Components/Eight.jsx'
+// import Eight from './Components/Eight.jsx'
+// import Ten from './Components/Ten.jsx'
+import Eleven from './Components/Eleven.jsx'
+
 function App() {
 
   return (
@@ -13,7 +16,9 @@ function App() {
       {/* <Five/> */}
       {/* <Six/> */}
       {/* <Seven/> */}
-      <Eight/>
+      {/* <Eight/> */}
+      {/* <Ten/>  */}
+      <Eleven/>
      </>
   )
 }
