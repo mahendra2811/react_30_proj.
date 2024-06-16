@@ -1,4 +1,5 @@
-import react from 'react'
+import { useEffect, useState } from 'react'
+import react  from 'react'
 import './App.css'
 // import Four from './Components/Four.jsx'
 // import Five from './Components/Five.jsx'
@@ -9,10 +10,15 @@ import './App.css'
 // import Eleven from './Components/Eleven.jsx'
 // import Tweleve from './Components/Tweleve.jsx'
 // import Thirteen from './Components/Thirteen.jsx'
-import Fourteen from './Components/Fourteen.jsx' 
+// import Fourteen from './Components/Fourteen.jsx' 
+import Fifteen from './Components/Fifteen.jsx'
+
+
 
 function App() {
 
+
+  const [items , setItems] = useState(['items1' , 'items2' , 'items3' , 'items4', 'BIg' , 'small' ]);
   return (
      <>
       {/* <Four/> */}
@@ -24,7 +30,8 @@ function App() {
       {/* <Eleven/> */}
       {/* <Tweleve/> */}
       {/* <Thirteen/> */}
-      <Fourteen/>
+      {/* <Fourteen/> */}
+      <Fifteen items={items} />
      </>
   )
 }
