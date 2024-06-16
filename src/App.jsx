@@ -8,7 +8,8 @@ import './App.css'
 // import Ten from './Components/Ten.jsx'
 // import Eleven from './Components/Eleven.jsx'
 // import Tweleve from './Components/Tweleve.jsx'
-import Thirteen from './Components/Thirteen.jsx'
+// import Thirteen from './Components/Thirteen.jsx'
+import Fourteen from './Components/Fourteen.jsx' 
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
       {/* <Ten/>  */}
       {/* <Eleven/> */}
       {/* <Tweleve/> */}
-      <Thirteen/>
+      {/* <Thirteen/> */}
+      <Fourteen/>
      </>
   )
 }
