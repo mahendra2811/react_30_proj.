@@ -1,18 +1,18 @@
 import React from 'react'
 
 export default function Eleven() {
-  let quote = [
+  let quotes = [
     "sdadfads asdfasdf dsfadsfa " , " 2nd para " , "3rd para " , "4th para "
-, "5th para "    ];
+, "5th para ", " 6th" , "7th "    ];
 
-const randomIndex = Math.floor(Math.random()*quote.length);
+const randomIndex = Math.floor(Math.random()*quotes.length);
 
-const quote = quote[randomIndex];
-// console.log(quote);
+const quote = quotes[randomIndex];
+console.log(quote);
 return (
 
-<div>
-  {quote}
-</div>
-)
+    <div>
+      {quote}
+    </div>
+  )
 }
