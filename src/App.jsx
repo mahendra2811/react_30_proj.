@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+
 import react  from 'react'
 import './App.css'
 // import Four from './Components/Four.jsx'
@@ -11,14 +11,18 @@ import './App.css'
 // import Tweleve from './Components/Tweleve.jsx'
 // import Thirteen from './Components/Thirteen.jsx'
 // import Fourteen from './Components/Fourteen.jsx' 
-import Fifteen from './Components/Fifteen.jsx'
+// import Fifteen from './Components/Fifteen.jsx'
+// import Sixteen from './Components/Sixteen.jsx';
+// import Seventeen from './Components/Seventeen.jsx';
+import Nineteen from './Components/Nineteen';
+import ThemeProvider from './Components/ThemeContext';
 
 
 
 function App() {
 
 
-  const [items , setItems] = useState(['items1' , 'items2' , 'items3' , 'items4', 'BIg' , 'small' ]);
+  const items  =['items1' , 'items2' , 'items3' , 'items4', 'BIg' , 'Anoter Item ', 'Another Item 2 ' ,'small' ];
   return (
      <>
       {/* <Four/> */}
@@ -31,7 +35,13 @@ function App() {
       {/* <Tweleve/> */}
       {/* <Thirteen/> */}
       {/* <Fourteen/> */}
-      <Fifteen items={items} />
+      {/* <Fifteen items={items} /> */}
+      {/* <Sixteen items={items} itemsPerPage = {2} />  */}
+      {/* <Seventeen/> */}
+      <ThemeProvider>
+        <Nineteen/>
+      </ThemeProvider>
+      
      </>
   )
 }

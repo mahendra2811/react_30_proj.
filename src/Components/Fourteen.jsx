@@ -8,7 +8,7 @@ export default function Fourteen() {
             navigator.geolocation.getCurrentPosition((position)=>{
                 const latitude = position.coords.latitude;
                 const longitude = position.coords.longitude;
-                const apiKey = '359ecd0cdf7ef5662011c90e7f6665d3';
+                const apiKey = '2e79e278c8d5c14635570bbb7c9d9111';
                 fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,daily&appid=${apiKey}`)
                 .then((response) => {
                     if (!response.ok) {
