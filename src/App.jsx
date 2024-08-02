@@ -14,15 +14,17 @@ import './App.css'
 // import Fifteen from './Components/Fifteen.jsx'
 // import Sixteen from './Components/Sixteen.jsx';
 // import Seventeen from './Components/Seventeen.jsx';
-import Nineteen from './Components/Nineteen';
-import ThemeProvider from './Components/ThemeContext';
+// import Nineteen from './Components/Nineteen';
+// import ThemeProvider from './Components/ThemeContext';
+import Tweenty from './Components/Tweenty';
+import { CartProvider } from './CartContext';
 
 
 
 function App() {
 
 
-  const items  =['items1' , 'items2' , 'items3' , 'items4', 'BIg' , 'Anoter Item ', 'Another Item 2 ' ,'small' ];
+  // const items  =['items1' , 'items2' , 'items3' , 'items4', 'BIg' , 'Anoter Item ', 'Another Item 2 ' ,'small' ];
   return (
      <>
       {/* <Four/> */}
@@ -38,9 +40,12 @@ function App() {
       {/* <Fifteen items={items} /> */}
       {/* <Sixteen items={items} itemsPerPage = {2} />  */}
       {/* <Seventeen/> */}
-      <ThemeProvider>
-        <Nineteen/>
-      </ThemeProvider>
+      {/* <ThemeProvider> */}
+        {/* <Nineteen/> */}
+      {/* </ThemeProvider> */}
+      <CartProvider>
+      <Tweenty/>
+      </CartProvider>
       
      </>
   )
